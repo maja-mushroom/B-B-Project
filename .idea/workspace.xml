@@ -8,6 +8,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1rTmJKFBzNLfjcZTjOGtGcDqY7c" />
@@ -31,6 +36,18 @@
       <option name="presentableId" value="Default" />
       <updated>1619008380698</updated>
     </task>
+    <task id="LOCAL-00001" summary="prvi, bez push-a">
+      <created>1619009044361</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1619009044361</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="prvi, bez push-a" />
+    <option name="LAST_COMMIT_MESSAGE" value="prvi, bez push-a" />
   </component>
 </project>
