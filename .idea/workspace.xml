@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="26df1e49-02ef-4e9e-b510-25a1a895fc3d" name="Default Changelist" comment="">
+    <list default="true" id="26df1e49-02ef-4e9e-b510-25a1a895fc3d" name="Default Changelist" comment="struktura_foldera_test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Plan/Test_Plan_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Test_Plan/Test_Plan_1.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="RobotTestCaseFile" />
+        <option value="RobotKeywordsFile" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="1_struktura_foldera" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,12 +62,35 @@
       <option name="project" value="LOCAL" />
       <updated>1619009634121</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="struktura_foldera">
+      <created>1619376753209</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1619376753209</updated>
+    </task>
+    <task id="LOCAL-00004" summary="struktura_foldera_test">
+      <created>1619378164514</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1619378164514</updated>
+    </task>
+    <task id="LOCAL-00005" summary="struktura_foldera_test">
+      <created>1619378922647</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1619378922647</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="prvi, bez push-a" />
     <MESSAGE value="prvi" />
-    <option name="LAST_COMMIT_MESSAGE" value="prvi" />
+    <MESSAGE value="struktura_foldera" />
+    <MESSAGE value="struktura_foldera_test" />
+    <option name="LAST_COMMIT_MESSAGE" value="struktura_foldera_test" />
   </component>
 </project>
