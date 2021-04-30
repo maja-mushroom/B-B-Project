@@ -5,62 +5,62 @@ Version 	Write by	  Revision Date	  Approved By	 Approval Date
 
 INTRODUCTION
 The Test Plan is designed to prescribe the scope, approach, resources,
-and schedule of all testing activities of the project Bed&Breakfast.
+and schedule of all testing activities of the project Bed&Breakfast Booking platform.
 The plan identify the items to be tested, the features to be tested,
 the types of testing to be performed, the personnel responsible for testing,
 the resources and schedule required to complete testing, and the risks associated with the plan.
 
 1	TEST STRATEGY
 1.1	Scope of Testing
-1.1.1	Feature to be tested
-All the feature of  Bed&Breakfast which were defined in software requirement specs are need to bested:
+1.1.1 Feature to be tested
+All the feature of  Bed&Breakfast Booking platform  which were defined in software requirement specs are need to be tested:
 
-Module Name	                               Description
+Module Name	                                                       Description
 
 Role1 : Customer
 
-Book this room	                          Try to schedule a room.
+Book this room	                                                  Try to schedule a room.
 
-Check the calendar                        Check that the calendar is working properly.
+Check the calendar                                                Check that the calendar is working properly.
 
-Calendar button: Today, Back, Next	       Check calendar button.
+Calendar button: Today, Back, Next	                              Check calendar button.
 
-Check textbox for book: Firstname, Lastname, Email, Phone	Check all textbox fields for booking.
+Check textbox for book: Firstname, Lastname, Email, Phone	      Check all textbox fields for booking.
 
-Check button “Book”	                       Check button Book does it works.
+Check button “Book”	                                              Check button Book does it works.
 
-Check button “Cancel”	                   Check button Cancel does it works.
+Check button “Cancel”	                                          Check button Cancel does it works.
 
-Verify alert “Booking Successful!“          Check alert “Booking Successful”
+Verify alert “Booking Successful!“                                Check alert “Booking Successful”
 
 Verify textbox for      message:
-Name, Email, Phone, Subject, Message	    Check textboxes fields for message.
+Name, Email, Phone, Subject, Message	                          Check text boxes fields for message.
 
-Verify button “Submit”	                    Check that button “Submit” works
+Verify button “Submit”	                                          Check that button “Submit” works
 
 
 Role 2 : Admin
-Verify form for  “Login”-                Verify that form for  “Login” is there and works
-Verify tab “Rooms” –                     Verify that tab “Rooms” is there and works
-Verify tab “Report”-                     Verify that tab “Report” is there and works
-Verify tab “Branding”-                   Verify that tab “Branding” is there and works
-Verify tab “Notification”-               Verify that tab “Notification” is there and works
-Verify tab “Front Page”-                 Verify that tab “Front page” is there and works
-Verify tab “Logout”-                     Verify that tab “logout” is there and works
+Verify form for  “Login”-                                         Verify that form for  “Login” is there and works
+Verify tab “Rooms” –                                              Verify that tab “Rooms” is there and works
+Verify tab “Report”-                                              Verify that tab “Report” is there and works
+Verify tab “Branding”-                                            Verify that tab “Branding” is there and works
+Verify tab “Notification”-                                        Verify that tab “Notification” is there and works
+Verify tab “Front Page”-                                          Verify that tab “Front page” is there and works
+Verify tab “Logout”-                                              Verify that tab “logout” is there and works
 
 
 1.1.2	Feature not to be tested
 These feature are not be tested because they are not included in the software requirement specs
 -	Hardware Interfaces
--	Database logical
+-	Database logic
 -	Website Security and Performance
 
 
 1.2	Test Type
-In the projectwebshop B&B,  there’re 3 types of testing should be conducted.
--	Manual Testing: Test manualy all app.
+In the project Bed&Breakfast Booking platform,  there’re 3 types of testing should be conducted.
+-	Manual Testing: Test manually all app.
 -	API testing: Test all the APIs create for the software under tested
--	Automation testing: Test some test cases whit Robot Framework
+-	Automation UI testing: Test some test cases whit Robot Framework
 
 
 1.3	Risk and Issues
@@ -80,7 +80,7 @@ The tester will start the test execution when all the following inputs are ready
 -	Test Environment is built
 
 2	TEST OBJECTIVE
-The test objectives are to verify the Functionality of website B&B, the project should focus on testing the
+The test objectives are to verify the Functionality of Bed&Breakfast Booking platform, the project should focus on testing the
 Booking process, testing both roles: admin and customer and verification of other important functions:
 login form for admin, all text fields, booking process for the customer, check what the role can see,
 do security testing  to guarantee all these operation can work normally in real business environment.
@@ -90,14 +90,14 @@ do security testing  to guarantee all these operation can work normally in real 
 If the team members report that there are 40% of test cases failed,
 suspend testing until the development team fixes all the failed cases.
 
-3.2	Exit Criteria
+3.2	EXIT CRITERIA
 Specifies the criteria that denote a successful completion of a test phase
 -	Run rate is mandatory to be 100% unless a clear reason is given.
 -	Pass rate is 80%, achieving the pass rate is mandatory.
 
 4	RESOURCE PLANNING
 4.1	System Resource
-1.	Server	 - Web server which install Maven Server
+1.	Server	    - Web server which install Maven Server
 2.	Test tool	- Develop a Test tool which can auto generate the test result to the pre- defined form
                   and automated test execution
 
@@ -113,8 +113,36 @@ Task	                          Members	                       Estimate effort
 Create the test specification	  Tester	                       170 man-hour
 Perform Test Execution	          Tester	                       80 man-hour
 Test Report	                      Tester	                       10 man-hour
+Test Automation                   Tester                           80 man-hour
+Environment Setup                 Tester                           20 man-hour
 Test Delivery		                                               20 man-hour
-Total		                                                       280 man-hour
+Total		                                                       400 man-hour
+
+6.   TEST ENVIRONMENT
+The Test Environment should be setup:
+-  Requirements
+RBP is currently known to work with the following requirements:
+JDK 15.0.2
+Maven 3.6.3
+Node 14.15.5
+NPM 6.14.11
+Clone repo from link https://github.com/mwinteringham/restful-booker-platform
+Building locally
+Running locally
+
+7. TEST DELIVERABLES
+Test deliverables are provided as below
+7.1   Before testing phase
+-     Test plans document.
+-     Test cases documents
+7.2   During the testing
+-     Test Tool
+-     Test Data
+-     Error logs and execution logs.
+7.3   After the testing cycles is over
+-     Test Results/reports
+-     Defect Report
+-     Installation/ Test procedures guidelines
 
 
 
