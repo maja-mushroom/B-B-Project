@@ -3,9 +3,9 @@ Manual tests bed & brekfast
 
 Role: Customer
 URL: https://automationintesting.online/#/
-Test
-Case ID	         Test Case 	                  Steps	                         Input Data	          Expected Output	     Actual Output	       Status	 Priority
 
+Test Case   Test Case 	             Steps	                              Input Data	  Expected Output	 Actual Output	       Status	 Priority
+ ID
 TC_01	 Verify „Book“ process      1.Click on button „Book this room“       „Book this room“    "Booking Successful!"  "Booking Successful!"    Pass       P1
          in present  „Today“        2.Click on button „Today“                „Today“
                                     3. Click on current day                  26/27.4.2021.
