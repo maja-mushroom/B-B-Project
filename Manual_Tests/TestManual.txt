@@ -1,0 +1,418 @@
+Manual tests bed & brekfast
+
+
+Role: Customer
+URL: https://automationintesting.online/#/
+
+Test Case   Test Case 	             Steps	                              Input Data	  Expected Output	 Actual Output	       Status	 Priority
+ ID
+TC_01	 Verify „Book“ process      1.Click on button „Book this room“       „Book this room“    "Booking Successful!"  "Booking Successful!"    Pass       P1
+         in present  „Today“        2.Click on button „Today“                „Today“
+                                    3. Click on current day                  26/27.4.2021.
+                                    4. Click in input field first            test
+                                    name and input text
+                                    5.Click in input field lastname          testic
+                                    and input text
+                                    6.Click in textbox email                 maka@gmail.com
+                                    and input mail form
+                                    7.Click in textbox phone and input       333000048586
+                                    numbers
+                                    8. Click on button „Book“               „Book“
+
+TC_02	Verify „Book“ process      1.Click on button „Book this room“        „Book this room“    Booking Successful!     Booking Successful!    Pass      P1
+        in future „Next“	       2.Click on button „Next“                  "Next"
+                                   3. Click on future day(s)                 29.4.2021.
+                                   4. Click in input field                   test
+                                   first name and input text
+                                   5.Click in input field                    testic
+                                   lastname and input text
+                                   6.Click in textbox email                  maka@gmail.com
+                                   and input mail form
+                                   7.Click in textbox phone                  333000048586
+                                   and input numbers
+                                   8. Click on button „Book“                 „Book“
+
+
+
+TC_03	Verify „Book“ process     1.Click on button „Book this room“        „Book this room“    You can't book           Booking Successful!    Fail      P1
+        in past time „Back“	      2.Click on button „Back“                  „Back“              in this period!
+                                  3. Click on past day(s)                   20.2.2021.
+                                  4. Click in input field                   test
+                                  „First name“ and input text
+                                  5.Click in input field „Lastname“         testic
+                                  and input text
+                                  6.Click in input field „Email“            maka@gmail.com
+                                  and input value
+                                  7.Click in input field „Phone“            333000048586
+                                  and input numbers
+                                  8. Click on button „Book“                 „Book“
+
+TC_04	Verify „Book“ process     1.Click on button „Book this room“       „Book this room“     Booking Successful!      Booking Successful!    Pass	  P2
+         in leap year             2.Click on button „Next“                 „Next“
+                                  3. Click on day(s)                       28/29.2.2024.
+                                  4. Click in input field „First name“     test
+                                  and input text
+                                  5.Click in input field „Lastname“        testic
+                                  and input text
+                                  6.Click in input field „Email“           maka@gmail.com
+                                  and input value
+                                  7.Click in input field „Phone“           333000048586
+                                  and input numbers
+                                  8. Click on button „Book“                „Book“
+
+
+TC_05	Verify „Book“process     1.Click on button „Book this room“       „Book this room“      must not be null	     must not be null	     Pass      P1
+        without reserved day(s)	 2. Click in input field „First name“     test
+                                 and input text
+                                 3.Click in input field „Lastname“        testic
+                                 and input text
+                                 4.Click in input field „Email“           maka@gmail.com
+                                 and input value
+                                 5.Click in input field „Phone“           333000048586
+                                 and input numbers
+                                 6. Click on button „Book“                „Book“
+
+
+TC_06	Verify „Book“ process   1.Click on button „Book this room“        „Book this room“     „Firstname should         „Firstname should        Pass    P1
+        whit empty input field  2.Click on button „Next“                  „Next“                not be blank!“            not be blank“
+        „First name“            3.Click on future day(s)                  30.4./1.5.2021.                                 „size must be
+                                4.Click in input field                    testic                                          between 3 and 18“
+                                „Lastname“ and input text
+                                5.Click in input field                    maka@gmail.com
+                                „Email“ and input value
+                                6.Click in input field                    333000048586
+                                „Phone“ and input numbers
+                                7. Click on button „Book“                 „Book“
+
+TC_07	Verify „Book“ process  	1.Click on button „Book this room“        „Book this room“     „Lastname should          „size must be           Pass    P1
+        whit empty input field  2.Click on button „Next“                  „Next“                not be blank!“            between 3 and 30“
+        „Lastname“              3. Click on future day(s)                 27/28.4.2021.                                  „Lastname should
+                                4. Click in input field                   test                                            not be blank“
+                                „First name“ and input text
+                                5.Click in input field                    maka@gmail.com
+                                „Email“ and input value
+                                6.Click in input field                    333000048586
+                                „Phone“ and input numbers
+                                7. Click on button „Book“	              „Book“
+
+
+TC_08  Verify „Book“ process    1.Click on button „Book this room“       „Book this room“     „must not be empty“        „must not be empty“	  Pass	  P1
+       whit empty input field   2.Click on button „Next“                 „Next“
+        „Email“  	            3.Click on future day(s)                 1/2.5.2021.
+                                4.Click in input field                   test
+                                „First name“ and input text
+                                5.Click in input field
+                                „Lastname“ and input text                testic
+                                6.Click in input field                   333000048586
+                                „Phone“ and input numbers
+                                7. Click on button „Book“	             „Book“
+
+
+TC_09	Verify „Book“ process   1.Click on button „Book this room“      „Book this room“      „size must be              „size must be          Pass	 P1
+        whit empty input field  2.Click on button „Next“                „Next“                between 11 and 21“         between 11 and 21“
+         „Phone“	            3.Click on future day(s)                3/4.5.2021.           „must not be empty“        „must not be empty“
+                                4.Click in input field                  test
+                                „First name“ and input text
+                                5.Click in input field                  testic
+                                „Lastname“ and input text
+                                6.Click in input field                  maka@gmail.com
+                                „Email“ and input value
+                                7.Click on button „Book“	            „Book“
+
+
+TC_10	Check length            1.Click on button „Book this room“     „Book this room“       "size must be              "size must be        Pass      P2
+        of input field          2.Click on button „Next“               „Next“                 between 3 and 18"          between 3 and 18"
+        “Firstname” min (3-18)  3.Click on future day(s)               4/5.5.2021.
+                                4.Click in input field                 Al
+                                „First name“ and input text
+                                5.Click in input field                 testic
+                                „Lastname“ and input text
+                                6.Click in input field                 maka@gmail.com
+                                „Email“ and input value
+                                7.Click in input field                 333000048586
+                                „Phone“ and input numbers
+                                8. Click on button „Book“              „Book“
+
+
+TC_11	Check length            1.Click on button „Book this room“     „Book this room“       "size must be              "size must be        Pass      P2
+        of input field          2.Click on button „Next“               „Next“                 between 3 and 18"          between 3 and 18"
+        “Firstname” max (3-18)  3.Click on future day(s)               4/5.5.2021.
+                                4.Click in input field                 TheOldFarmhou
+                                „First name“ and input text            seShadyStreet
+                                5.Click in input field                 testic
+                                „Lastname“ and input text
+                                6.Click in input field                 maka@gmail.com
+                                „Email“ and input value
+                                7.Click in input field                 333000048586
+                                „Phone“ and input numbers
+                                8. Click on button „Book“              „Book“
+
+TC_12	Check length            1.Click on button „Book this room“     „Book this room“       "size must be              "size must be        Pass      P2
+        of input field          2.Click on button „Next“               „Next“                 between 3 and 18"          between 3 and 18"
+        “Lastname” max (3-18)   3.Click on future day(s)               4/5.5.2021.
+                                4.Click in input field                 test
+                                „First name“ and input text
+                                5.Click in input field                 te
+                                „Lastname“ and input text
+                                6.Click in input field                 maka@gmail.com
+                                „Email“ and input value
+                                7.Click in input field                 333000048586
+                                „Phone“ and input numbers
+                                8. Click on button „Book“              „Book“
+
+TC_13	Check length            1.Click on button „Book this room“     „Book this room“       "size must be              "size must be        Pass      P2
+        of input field          2.Click on button „Next“               „Next“                 between 3 and 30"          between 3 and 30"
+        “Lastname” max (3-18)   3.Click on future day(s)               27.4.2021.
+                                4.Click in input field                 test
+                                „First name“ and input text
+                                5.Click in input field                 BoletusBoletusBoletus
+                                „Lastname“ and input text              BoletusBoletusBoletus
+                                6.Click in input field                 maka@gmail.com
+                                „Email“ and input value
+                                7.Click in input field                 333000048586
+                                „Phone“ and input numbers
+                                8. Click on button „Book“              „Book“
+
+
+TC_14	Check email form        1.Click on button „Book this room“     „Book this room“       "must be a well-           "must be a well-       Pass      P2
+        - wrong input           2.Click on button „Next“               „Next“                 formed email address"      formed email address"
+                                3.Click on future day(s)               5.5.2021.
+                                4.Click in input field                 test
+                                „First name“ and input text
+                                5.Click in input field                 testic
+                                „Lastname“ and input text
+                                6.Click in input field                 tralalalalalala
+                                „Email“ and input value
+                                7.Click in input field                 333000048586
+                                „Phone“ and input numbers
+                                8. Click on button „Book“              „Book“
+
+TC_15	Check „Phone“ number    1.Click on button „Book this room“     „Book this room“       Error mesage:              "Booking             Fail      P2
+        – wrong input (text)    2.Click on button „Next“               „Next“                 “please enter numbers“     Successful"
+                                3.Click on future day(s)               4/5.5.2021.
+                                4.Click in input field                 test
+                                „First name“ and input text
+                                5.Click in input field                 testic
+                                „Lastname“ and input text
+                                6.Click in input field                 maka@gmail.com
+                                „Email“ and input value
+                                7.Click in input field                 testtesttest
+                                „Phone“ and input numbers
+                                8. Click on button „Book“              „Book“
+
+TC_16	Check phone number      1.Click on button „Book this room“     „Book this room“       "size must be              "size must be         Pass      P2
+        – wrong input(max)      2.Click on button „Next“               „Next“                 between 11 and 21"          between 11 and 21"
+                                3.Click on future day(s)               15.5.2021.
+                                4.Click in input field                 test
+                                „First name“ and input text
+                                5.Click in input field                 testic
+                                „Lastname“ and input text
+                                6.Click in input field                 maka@gmail.com
+                                „Email“ and input value
+                                7.Click in input field                 33300004858664657573
+                                „Phone“ and input numbers              54362735473822929383
+                                8. Click on button „Book“              „Book“
+
+
+TC_17	Verify all input        1.Click in input field                 Craft Worker           „Thanks for getting        „Thanks for getting    Pass	 P2
+        fields for „Message“    „Name“ and input name                                         in touch Craft Worker!     in touch Craft Worker!
+                                2.Click in input field                 maka@gmail.com         We'll get back to you      We'll get back to you
+                                „Email“ and input email                                       about ake@fakeemail.com    about ake@fakeemail.com
+                                3.Click in input field                 333000048586           as soon as possible.“      as soon as possible.“
+                                „Phone“ and input phone
+                                4.Click in input field                 ake@fakeemail.com
+                                „Subject“ and input subject
+                                5.Click in input field                 Can I reserve a
+                                „Message“ and input message            room with a sea view?
+                                6.Click button „Submit“                „Submit“
+
+TC_18	Verify input fields     1.Click in input field                 maka@gmail.com         „must not be blank“        „must not be blank“      Pass     P2
+        for „Message“ whit      „Email“ and input email
+        empty input field       2.Click in input field                 333000048586
+         „Name“                 „Phone“ and input phone
+                                3.Click in input field                 ake@fakeemail.com
+                                „Subject“ and input subject
+                                4.Click in input field                 Can I reserve a
+                                „Message“ and input message            room with a sea view?
+                                5.Click button „Submit“                „Submit“
+
+TC_19	Verify input fields     1.Click in input field                 Craft Worker           „must not be blank“        „must not be blank“      Pass     P2
+        for „Message“ whit      „Name“ and input name
+        empty input field       2.Click in input field                 333000048586
+         „Email“                „Phone“ and input phone
+                                3.Click in input field                 ake@fakeemail.com
+                                „Subject“ and input subject
+                                4.Click in input field                 Can I reserve a
+                                „Message“ and input message            room with a sea view?
+                                5.Click button „Submit“                „Submit“
+
+TC_20	Verify input fields     1.Click in input field                 Craft Worker           „must not be blank“        „must not be blank“      Pass     P2
+        for „Message“ whit      „Name“ and input name                                         „size must be              „size must be
+        empty input field       2.Click in input field                 maka@gmail.com         between 11 and 21“         between 11 and 21“
+         „Phone“                „Email“ and input email
+                                3.Click in input field                 ake@fakeemail.com
+                                „Subject“ and input subject
+                                4.Click in input field                 Can I reserve a
+                                „Message“ and input message            room with a sea view?
+                                5.Click button „Submit“                „Submit“
+
+TC_21	Verify input fields     1.Click in input field                 Craft Worker           „must not be blank“        „must not be blank“      Pass     P2
+        for „Message“ whit      „Name“ and input name                                         „size must be              „size must be
+        empty input field       2.Click in input field                 maka@gmail.com          between 5 and 100“         between 5 and 100“
+         „Subject“               „Email“ and input email
+                                3.Click in input field                 0435366353627
+                                „Phone“ and input phone
+                                4.Click in input field                 Can I reserve a
+                                „Message“ and input message            room with a sea view?
+                                5.Click button „Submit“                „Submit“
+
+TC_22	Verify input fields     1.Click in input field                 Craft Worker           „must not be blank“        „must not be blank“      Pass     P2
+        for „Message“ whit      „Name“ and input name                                         „size must be              „size must be
+        empty input field       2.Click in input field                 maka@gmail.com          between 20 and 200“        between 20 and 200“
+         „Message“              „Email“ and input email
+                                3.Click in input field                 0435366353627
+                                „Phone“ and input phone
+                                4.Click in input field                 ake@fakeemail.com
+                                „Subject“ and input subject
+                                5.Click button „Submit“                „Submit“
+
+
+
+Role: Admin
+URL: https://automationintesting.online/#/admin
+
+
+TC_23	Verify valid login	    1.Click on input field                 admin                  “successfully logged in”   “successfully logged in”    Pass   P1
+                                „Username“ and input username
+                                2.Click on input field                 password
+                                „Password“ and input password
+                                3.Click on the button „Login“          „Login“
+
+TC_24	Verify valid login	    1.Empty
+                                2.Empty
+                                3.Click on the button „Login“         „Login“                                            No error message	       Pass	   P1
+
+TC_25	Verify invalid login	1.Click on input field                 admin                   Invalid login             Invalid login             Pass    P1
+         – wrong password	    „Username“ and input username
+                                2.Click on input field                 password123
+                                „Password“ and input password
+                                3.Click on the button „Login“          „Login“
+
+TC_26	Verify invalid login	1.Click on input field                 ADMINISTRATOR          Invalid login              Invalid login           Pass   P1
+         – wrong username	    „Username“ and input username
+                                2.Click on input field                 password
+                                „Password“ and input password
+                                3.Click on the button „Login“          „Login“
+
+TC_26	Verify invalid login	1.Click on input field                 ADMINISTRATOR          Invalid login              Invalid login           Pass   P1
+         – wrong username	    „Username“ and input username
+                                2.Click on input field                 password
+                                „Password“ and input password
+                                3.Click on the button „Login“          „Login“
+
+TC_27	Verify invalid login	1.Click on input field                 123456789             Invalid login               Invalid login           Pass   P1
+         – wrong username	    „Username“ and input username
+         and password           2.Click on input field                 Pass123456789
+                                „Password“ and input password
+                                3.Click on the button „Login“          „Login“
+
+
+
+TC_28	Verify minimum         1.Click on input field                 Ma                    Minimum lengths should be    They are not set.      Fail	P1
+        Length for             „Username“ and input username                                set for  the input fields
+        input fields           2.Click on input field                 12
+                               „Password“ and input password
+                               3.Click on the button „Login“          „Login“
+
+TC_29	Verify maximum         1.Click on input field                 UX testers often      Maximum lengths should be    They are not set.      Fail	P1
+        Length for             „Username“ and input username          some of the most      set for  the input fields
+        input fields           2.Click on input field                 1211111111111111
+                               „Password“ and input password          1111112222222222
+                               3.Click on the button „Login“          „Login“
+
+TC_30	Verify copy – paste    1.Click on input field                 admin                   Invalid login              Invalid login           Pass   P1
+        Verify  action from    „Username“ and input username
+        input field password   2.Click on input field                 admin-copy/paste
+                               „Password“ and copy-past from
+                               „Username“
+                               3.Click on the button „Login“          „Login“
+
+TC_31	Verify the message 	   1.Click on input field                 123456789              “Invalid username           No error message         Fail   P1
+        for invalid login     „Username“ and input username                                   and password”
+                               2.Click on input field                 Pass123456789
+                               „Password“ and input password
+                               3.Click on the button „Login“          „Login“
+
+
+
+
+
+TC_32	Verify navigation    1. 1.Click on icon notifications       Notifications            Navigation to               Navigation to          Pass      P1
+        to notifications                                                                     notification works          notification works
+
+TC_33	Verify does the      1.Click on icon notifications          Notifications            Valid number of             Valid number of        Pass      P2
+        notification counter                                                                 notification appear	     notification appear
+        works
+
+TC_34 	Verify the data      1.Click on icon notification          James Dean               Data are visible             Data are visible       Pass      P2
+        in notification	     2.Click on specific notification      From: James Dean
+                             3.Confirm the visibility of the data  Phone: 01402 619211
+	                                                               Email: james@email.com
+                                                                   Booking enquiry
+                                                                   I would like to book
+                                                                   a room at your place
+                                                                   „Close“
+
+TC_35	Verify navigation 	 1.Click on tab „Front Page“	       „Front Page“	            Navigation works	         Navigation works	   Pass    	P1
+        to the „Front Page“
+
+TC_36	Verify navigation 	 1.Click on tab „Logout“	           „Logout“	                Navigation works	         Navigation works	   Pass	     P1
+        to the „Logout“
+
+TC_37	Verify navigation 	 1.Click on tab „Rooms“	               „Rooms“	                Navigation works	         Navigation works	   Pass    	 P1
+        to the „Rooms“
+
+TC_38	Verify add new Room	 1.Click on tab „Rooms“                „Rooms“                  “Successfully create”        “Successfully create”  Pass      P1
+                             2.Input „Room#“ number                102
+                             3.Choose „Type“                       Twin
+                             4.Choose “Accessible“                 True
+                             5.Input „Price“                       150
+                             6.Choose “Room details”               Tv,WiFi
+                             7.Click on button “Create”	           “Create”
+
+TC_39	Verify new „Room“    1.Click on tab „Rooms“                „Rooms“                 “New room is visible.”	     “New room is visible.”	  Pass     P2
+        visibility on        2.Input „Room#“ number                102
+        “Front Page”         3.Choose „Type“                       Twin
+                             4.Choose “Accessible“                 True
+                             5.Input „Price“                       150
+                             6.Choose “Room details”               Tv,WiFi
+                             7.Click on button “Create”            “Create”
+                             8.Click on tab “Front Page”           „Front Page“
+                             9.Check the new room is visible
+
+
+TC_40	Verify navigation 	 1.Click on tab „Report“	           „Report“	                Navigation works	         Navigation works	    Pass      P1
+        to the „Report“
+
+TC_41	Verify navigation 	 1.Click on tab „Branding“	           „Branding“	            Navigation works	         Navigation works	    Pass	 P1
+        to the „Branding“
+
+TC_42   Verify edit          1.Click on tab „Branding“             „Branding“               Successfully edit            Successfully edit      Pass     P1
+        „Branding“           2.Click on input field                Hotel Chocolate.          “Branding”                   “Branding”
+                             „Name“ and edit
+                             3. Click on input field               https://logos-download.com
+                             „Logo“ and edit                       /wp-content/uploads/2019
+                                                                   /01/Hotel_Chocolate_Logo.png
+                             4.Click on input field                Sometimes you need to browse
+                             „Description“ and edit                through absolutely everything
+                                                                   to find exactly what
+                                                                   you are looking for
+                             5.Click on button „Submit“	           „Submit“
+
+
+
+
+
+
+
+
